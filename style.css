@@ -1,0 +1,170 @@
+:root {
+  --nutmeg: hsl(14, 45%, 36%);
+  --dark-raspberry: hsl(332, 51%, 32%);
+
+  --white: hsl(0, 0%, 100%);
+  --rose-white: hsl(330, 100%, 98%);
+  --eggshell: hsl(30, 54%, 90%);
+  --light-grey: hsl(30, 18%, 87%);
+  --wenge-brown: hsl(30, 10%, 34%);
+  --dark-charcoal: hsl(24, 5%, 18%);
+}
+
+.young-serif-regular {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.outfit-regular {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.outfit-medium {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.outfit-bold {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  background-color: var(--eggshell);
+  font-family: var(--young-serif-regular);
+  color: var(--dark-charcoal);
+}
+
+img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+main {
+  max-width: 1440px;
+  width: 29%;
+  background-color: var(--white);
+  border-radius: 20px;
+  padding: 30px;
+  margin: 100px auto;
+}
+
+h1 {
+  color: var(--dark-charcoal);
+}
+
+h2 {
+  color: var(--nutmeg);
+}
+
+#prep-card {
+  width: 93%;
+  padding: 20px;
+  background-color: var(--rose-white);
+  border-radius: 14px;
+}
+
+p#card-title {
+  margin: 0;
+  padding: 0;
+  color: var(--dark-raspberry);
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  margin: 8px;
+}
+
+ol li::marker {
+  padding: 0;
+  font-weight: bold;
+}
+
+li {
+  padding-left: 12px;
+  margin-left: 20px;
+  line-height: 1.5;
+}
+
+::marker {
+  color: var(--dark-raspberry);
+}
+
+span {
+  font-weight: 600;
+  color: var(--wenge-brown);
+}
+
+hr {
+  border: 0.5px solid var(--light-grey);
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tr {
+  border-bottom: var(--light-grey) solid thin;
+}
+
+td {
+  padding: 16px 24px;
+}
+
+td:nth-child(2) {
+  color: var(--dark-raspberry);
+  font-weight: 600;
+}
+
+tr:last-child {
+  border: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 375px) {
+  main {
+    max-width: 375px;
+    width: 84%;
+    padding: 0 16px;
+    border-radius: 0;
+    overflow: hidden;
+  }
+
+  img {
+    width: 119%;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+    left: -30px;
+    position: relative;
+  }
+  ul,
+  ol {
+    line-height: 2;
+  }
+  #prep-card {
+    width: 87%;
+  }
+}
